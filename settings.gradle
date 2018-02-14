@@ -1,0 +1,6 @@
+rootProject.name = 'twitter-unfollowers'
+
+include 'web'
+include 'application'
+include 'usecase'
+include 'persistence'

@@ -1,0 +1,16 @@
+apply plugin: 'application'
+
+mainClassName = "br.com.ivanzao.Main"
+
+applicationDefaultJvmArgs = [
+        "-server",
+        "-XX:+UseNUMA",
+        "-XX:+UseParallelGC",
+        "-Duser.timezone=America/Sao_Paulo"
+]
+
+dependencies {
+    compile project(":web")
+    compile project(":usecase")
+    compile project(":persistence")
+}
